@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="C:\lazarus\fpc\3.2.2\bin\x86_64-win64\fpc.exe" Date="1556500325"/>
+  <Params Value="-MObjFPC -Scghi -O1 -g -gl -WG -l -vewnhibq &quot;-FiD:\INFORMATICA\PROGRAMACION I\APLICACION 4\APP4_V1\lib\x86_64-win64&quot; &quot;-FuD:\INFORMATICA\PROGRAMACION I\APLICACION 4\APP4_V1\&quot; -FuC:\lazarus\lcl\units\x86_64-win64\win32 -FuC:\lazarus\lcl\units\x86_64-win64 -FuC:\lazarus\components\freetype\lib\x86_64-win64 -FuC:\lazarus\components\lazutils\lib\x86_64-win64 -FuC:\lazarus\packager\units\x86_64-win64 &quot;-FUD:\INFORMATICA\PROGRAMACION I\APLICACION 4\APP4_V1\lib\x86_64-win64\&quot; &quot;-FED:\INFORMATICA\PROGRAMACION I\APLICACION 4\APP4_V1\&quot; &quot;-oD:\INFORMATICA\PROGRAMACION I\APLICACION 4\APP4_V1\inf120_app04.exe&quot; -dLCL -dLCLwin32 inf120_app04.lpr"/>
+</CONFIG>

@@ -1,0 +1,175 @@
+object frmMain: TfrmMain
+  Left = 300
+  Height = 520
+  Top = 150
+  Width = 720
+  Caption = 'VectorPlus - INF-120 Aplicacion 04'
+  ClientHeight = 520
+  ClientWidth = 720
+  Position = poScreenCenter
+  OnCreate = FormCreate
+  object gbDatos: TGroupBox
+    Left = 12
+    Height = 112
+    Top = 8
+    Width = 696
+    Anchors = [akTop, akLeft, akRight]
+    Caption = 'Datos'
+    ClientHeight = 92
+    ClientWidth = 692
+    TabOrder = 0
+    object lblA: TLabel
+      Left = 12
+      Height = 15
+      Top = 12
+      Width = 70
+      Caption = 'Vector A:'
+      ParentColor = False
+    end
+    object lblB: TLabel
+      Left = 12
+      Height = 15
+      Top = 44
+      Width = 70
+      Caption = 'Vector B:'
+      ParentColor = False
+    end
+    object lblCorte: TLabel
+      Left = 12
+      Height = 15
+      Top = 72
+      Width = 120
+      Caption = 'Corte de control:'
+      ParentColor = False
+    end
+    object edtA: TEdit
+      Left = 140
+      Height = 23
+      Top = 8
+      Width = 536
+      Anchors = [akTop, akLeft, akRight]
+      TabOrder = 0
+    end
+    object edtB: TEdit
+      Left = 140
+      Height = 23
+      Top = 40
+      Width = 536
+      Anchors = [akTop, akLeft, akRight]
+      TabOrder = 1
+    end
+    object edtCorte: TEdit
+      Left = 140
+      Height = 23
+      Top = 68
+      Width = 80
+      TabOrder = 2
+    end
+  end
+  object gbOperaciones: TGroupBox
+    Left = 12
+    Height = 136
+    Top = 128
+    Width = 696
+    Anchors = [akTop, akLeft, akRight]
+    Caption = 'Operaciones'
+    ClientHeight = 116
+    ClientWidth = 692
+    TabOrder = 1
+    object btnCortes: TButton
+      Left = 12
+      Height = 32
+      Top = 8
+      Width = 232
+      Caption = '1. Cantidad de cortes de control'
+      OnClick = btnCortesClick
+      TabOrder = 0
+    end
+    object btnEntreCortes: TButton
+      Left = 254
+      Height = 32
+      Top = 8
+      Width = 240
+      Caption = '2. Elementos entre cortes de control'
+      OnClick = btnEntreCortesClick
+      TabOrder = 1
+    end
+    object btnDividir: TButton
+      Left = 12
+      Height = 32
+      Top = 48
+      Width = 232
+      Caption = '3. Dividir en Par e Impar'
+      OnClick = btnDividirClick
+      TabOrder = 2
+    end
+    object btnIntercalar: TButton
+      Left = 254
+      Height = 32
+      Top = 48
+      Width = 240
+      Caption = '4. Intercalar A y B'
+      OnClick = btnIntercalarClick
+      TabOrder = 3
+    end
+    object btnPurgar: TButton
+      Left = 12
+      Height = 32
+      Top = 84
+      Width = 232
+      Caption = '5. Purgar con cortes de control'
+      OnClick = btnPurgarClick
+      TabOrder = 4
+    end
+    object btnLimpiar: TButton
+      Left = 254
+      Height = 32
+      Top = 84
+      Width = 240
+      Caption = 'Limpiar resultados'
+      OnClick = btnLimpiarClick
+      TabOrder = 5
+    end
+    object rgDivision: TRadioGroup
+      Left = 508
+      Height = 72
+      Top = 8
+      Width = 170
+      AutoFill = True
+      Caption = 'Par / Impar segun'
+      ChildSizing.LeftRightSpacing = 6
+      ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+      ChildSizing.EnlargeVertical = crsHomogenousChildResize
+      ChildSizing.ShrinkHorizontal = crsScaleChilds
+      ChildSizing.ShrinkVertical = crsScaleChilds
+      ChildSizing.Layout = cclLeftToRightThenTopToBottom
+      ChildSizing.ControlsPerLine = 1
+      ClientHeight = 52
+      ClientWidth = 166
+      ItemIndex = 0
+      Items.Strings = (
+        'Valor'
+        'Posicion'
+      )
+      TabOrder = 6
+    end
+  end
+  object lblResultados: TLabel
+    Left = 12
+    Height = 15
+    Top = 272
+    Width = 80
+    Caption = 'Resultados:'
+    ParentColor = False
+  end
+  object mmoResultados: TMemo
+    Left = 12
+    Height = 216
+    Top = 292
+    Width = 696
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    ReadOnly = True
+    ScrollBars = ssAutoVertical
+    TabOrder = 2
+  end
+end
